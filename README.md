@@ -2,8 +2,8 @@
 
 loadtesting application
 
-This application exposes REST APIs to create, update and fetch a request.
-It also move request to target application for processing.
+This application acts as a Listnere to RabbitMQ rquests sent for processing.
+It process the request with a delay of 2 seconds and calls a webhook end point to update the status of the request.
 
 Steps to build the application:
 
